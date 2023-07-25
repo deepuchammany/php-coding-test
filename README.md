@@ -35,8 +35,8 @@ Run `make run` to execute `program.php`. It is not required, but we have provide
 it if you would like to just run PHP code to debug things.
 
 ## Choices or assumptions I made and reasons why
-* E.g. I assumed that task names were unique
+* The addTask function did not need to push the id separately into the array as this was already included in the tasks object in the Project model
+* The getTask function should return only the name of the Task as it was being compared to the name of the task in the test function
 
 ## Things I would do if I had more time
-* E.g. I would have rewritten it to use Rust because it's super fast and 
-that's what Khan Academy did!
+* Add function to Edit the details of a task retaining the current id
